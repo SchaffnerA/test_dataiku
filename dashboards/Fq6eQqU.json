@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "id": "Fp3ZS9l",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false,
+      "enableCrossFilters": true
+    }
+  ],
+  "owner": "adrien.schaffner@aqsone.com",
+  "listed": true,
+  "name": "test\u0027s default dashboard",
+  "showGrid": true,
+  "reloadWhenEventReceived": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "adrien.schaffner@aqsone.com"
+    },
+    "lastModifiedOn": 1705334739598,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
