@@ -11,7 +11,7 @@ fake_data_df = fake_data.get_dataframe()
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
-fake_data_df['col_merged'] = fake_data_df['Name'] + fake_data_df['email']
+fake_data_df['col_merged'] = fake_data_df['Name'] + fake_data_df['Email']
 merge_col_df = fake_data_df # For this sample code, simply copy input to output
 
 
