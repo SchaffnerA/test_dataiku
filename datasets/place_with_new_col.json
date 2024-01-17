@@ -82,7 +82,8 @@
       {"name":"Rambience","type":"string"},
       {"name":"franchise","type":"string"},
       {"name":"area","type":"string"},
-      {"name":"other_services","type":"string"}
+      {"name":"other_services","type":"string"},
+      {"name":"new_col","type":"double"}
     ],
     "userModified": false
   },
