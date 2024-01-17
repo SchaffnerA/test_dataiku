@@ -1,0 +1,59 @@
+{
+  "type": "CODE_STUDIO_AS_WEBAPP",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "codeStudioId": "X6Zop4e",
+    "exposedPort": {
+      "label": "Streamlit",
+      "port": 8181,
+      "exposeHtml": true,
+      "exposition": {
+        "type": "port_forward",
+        "params": {}
+      },
+      "allowExpositionOverride": false
+    },
+    "autoStartBackend": false,
+    "infra": {
+      "containerSelection": {
+        "containerMode": "EXPLICIT_CONTAINER",
+        "containerConf": "CPU-S-0.5-cpu-2Gb-Ram"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {},
+  "name": "test_streamlit_shap",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "adrien.schaffner@aqsone.com"
+    },
+    "lastModifiedOn": 1705510446904,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}
