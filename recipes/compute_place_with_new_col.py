@@ -8,11 +8,10 @@ place = dataiku.Dataset("place")
 place_df = place.get_dataframe()
 
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
+
 
 place_with_new_col_df = place_df # For this sample code, simply copy input to output
+place_with_new_col_df['new_col'] = place_with_new_col_df['latitude']+place_with_new_col_df['longitude']
 
 
 # Write recipe outputs
