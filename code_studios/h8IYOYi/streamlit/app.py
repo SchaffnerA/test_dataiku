@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import altair as alt
 import dataiku
-
+import shap
 st.title('Hello Streamlit!')
 
 filtered = dataiku.Dataset("filtered")
