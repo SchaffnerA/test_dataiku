@@ -61,8 +61,14 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"Name","type":"string"},
+      {"name":"Email","type":"string"},
+      {"name":"Phone","type":"string"},
+      {"name":"Address","type":"string"},
+      {"name":"col_merged","type":"string"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
