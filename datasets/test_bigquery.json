@@ -1,0 +1,167 @@
+{
+  "type": "BigQuery",
+  "managed": false,
+  "featureGroup": false,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "adrien.schaffner@aqsone.com"
+    },
+    "lastModifiedOn": 1705514849445,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "useBigQueryPartitioning": false,
+    "bigQueryPartitioningType": "DATE",
+    "bigQueryPartitioningRangeStart": 0,
+    "bigQueryPartitioningRangeEnd": 0,
+    "bigQueryPartitioningRangeInterval": 0,
+    "connection": "test_bigquery",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "catalog": "vertical-shore-406513",
+    "table": "test_bigquery",
+    "schema": "test_id_blabla",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"userID","type":"string","maxLength":16200},
+      {"name":"latitude","type":"double"},
+      {"name":"longitude","type":"double"},
+      {"name":"smoker","type":"string","maxLength":16200},
+      {"name":"drink_level","type":"string","maxLength":16200},
+      {"name":"dress_preference","type":"string","maxLength":16200},
+      {"name":"ambience","type":"string","maxLength":16200},
+      {"name":"transport","type":"string","maxLength":16200},
+      {"name":"marital_status","type":"string","maxLength":16200},
+      {"name":"hijos","type":"string","maxLength":16200},
+      {"name":"birth_year","type":"bigint"},
+      {"name":"interest","type":"string","maxLength":16200},
+      {"name":"personality","type":"string","maxLength":16200},
+      {"name":"religion","type":"string","maxLength":16200},
+      {"name":"activity","type":"string","maxLength":16200},
+      {"name":"color","type":"string","maxLength":16200},
+      {"name":"weight","type":"bigint"},
+      {"name":"budget","type":"string","maxLength":16200},
+      {"name":"height","type":"double"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
