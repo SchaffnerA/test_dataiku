@@ -1,0 +1,20 @@
+{
+  "name": "test_streamlit_shap",
+  "libName": "test_streamlit_shap",
+  "templateId": "test2",
+  "params": {},
+  "owner": "adrien.schaffner@aqsone.com",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "adrien.schaffner@aqsone.com"
+    },
+    "lastModifiedOn": 1705509161360,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
