@@ -61,8 +61,30 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"placeID","type":"double"},
+      {"name":"latitude","type":"double"},
+      {"name":"longitude","type":"double"},
+      {"name":"the_geom_meter","type":"string"},
+      {"name":"name","type":"string"},
+      {"name":"address","type":"string"},
+      {"name":"city","type":"string"},
+      {"name":"state","type":"string"},
+      {"name":"country","type":"string"},
+      {"name":"fax","type":"string"},
+      {"name":"zip","type":"string"},
+      {"name":"alcohol","type":"string"},
+      {"name":"smoking_area","type":"string"},
+      {"name":"dress_code","type":"string"},
+      {"name":"accessibility","type":"string"},
+      {"name":"price","type":"string"},
+      {"name":"url","type":"string"},
+      {"name":"Rambience","type":"string"},
+      {"name":"franchise","type":"string"},
+      {"name":"area","type":"string"},
+      {"name":"other_services","type":"string"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
