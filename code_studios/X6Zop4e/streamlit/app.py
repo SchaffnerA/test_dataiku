@@ -4,7 +4,7 @@ import numpy as np
 import altair as alt
 import dataiku
 import shap
-st.title('From gcs to streamlit using dataiku!')
+st.title('Table')
 
 new_df = dataiku.Dataset("merge_col")
 new_df = new_df.get_dataframe()
