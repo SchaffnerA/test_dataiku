@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "test_no_input",
+          "ref": "test_no_output",
           "appendMode": false
         }
       ]
