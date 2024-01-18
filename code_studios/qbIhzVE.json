@@ -1,0 +1,20 @@
+{
+  "name": "erhazeh",
+  "libName": "erhazeh",
+  "templateId": "streamlit-template2",
+  "params": {},
+  "owner": "adrien.schaffner@aqsone.com",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "adrien.schaffner@aqsone.com"
+    },
+    "lastModifiedOn": 1705568341532,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
